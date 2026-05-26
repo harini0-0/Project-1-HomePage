@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 2240" font-family="Courier New, monospace">
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .box { fill: none; stroke: #333; stroke-width: 1.5; }
+      .box-light { fill: none; stroke: #999; stroke-width: 1; }
+      .line { stroke: #999; stroke-width: 2; }
+      .line-thin { stroke: #bbb; stroke-width: 1.5; }
+      .cross { stroke: #999; stroke-width: 1; }
+      .text { fill: #333; font-size: 11px; }
+      .label { fill: #666; font-size: 10px; }
+      .tiny { fill: #999; font-size: 9px; }
+      .annot { fill: #888; font-size: 9px; font-style: italic; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1000" height="2240"/>
+
+  <!-- Title -->
+  <text x="40" y="28" class="text" font-size="13" font-weight="700">WIREFRAME / projects.html / PROJECTS PAGE</text>
+  <line x1="40" y1="38" x2="960" y2="38" class="line-thin"/>
+
+  <!-- ===== NAVBAR ===== -->
+  <g transform="translate(40, 60)">
+    <rect class="box" width="920" height="50"/>
+    <circle cx="28" cy="25" r="14" class="box"/>
+    <line x1="20" y1="17" x2="36" y2="33" class="cross"/>
+    <line x1="36" y1="17" x2="20" y2="33" class="cross"/>
+    <line x1="55" y1="25" x2="180" y2="25" class="line"/>
+    <line x1="640" y1="25" x2="690" y2="25" class="line"/>
+    <line x1="710" y1="25" x2="780" y2="25" class="line" stroke="#333" stroke-width="3"/>
+    <line x1="800" y1="25" x2="850" y2="25" class="line"/>
+    <line x1="870" y1="25" x2="900" y2="25" class="line"/>
+    <text x="0" y="-6" class="annot">[navigation, sticky, "Projects" active]</text>
+  </g>
+
+  <!-- ===== HEADER ===== -->
+  <g transform="translate(40, 130)">
+    <rect class="box" width="920" height="140"/>
+    <text x="0" y="-6" class="annot">[page header]</text>
+    <line x1="30" y1="30" x2="120" y2="30" class="line"/>
+    <text x="135" y="34" class="tiny">// section eyebrow</text>
+    <line x1="30" y1="70" x2="380" y2="70" stroke="#333" stroke-width="8"/>
+    <text x="395" y="74" class="annot">H1 heading</text>
+    <line x1="30" y1="110" x2="400" y2="110" class="line-thin"/>
+    <text x="415" y="114" class="annot">1-line intro</text>
+  </g>
+
+  <!-- ===== HONEYCOMB ===== -->
+  <g transform="translate(40, 300)">
+    <rect class="box" width="920" height="380"/>
+    <text x="0" y="-6" class="annot">[honeycomb / 4 featured projects, hex shape, click = anchor scroll]</text>
+
+    <!-- 4 hex outlines, alternating offset -->
+    <!-- Hex 1 (top-left) -->
+    <g transform="translate(160, 60)">
+      <polygon points="100,0 200,50 200,150 100,200 0,150 0,50" class="box"/>
+      <line x1="0" y1="0" x2="200" y2="200" class="cross"/>
+      <line x1="200" y1="0" x2="0" y2="200" class="cross"/>
+    </g>
+    <!-- Hex 2 (top-right) -->
+    <g transform="translate(560, 60)">
+      <polygon points="100,0 200,50 200,150 100,200 0,150 0,50" class="box"/>
+      <line x1="0" y1="0" x2="200" y2="200" class="cross"/>
+      <line x1="200" y1="0" x2="0" y2="200" class="cross"/>
+    </g>
+    <!-- Hex 3 (bottom-left, offset down) -->
+    <g transform="translate(360, 160)">
+      <polygon points="100,0 200,50 200,150 100,200 0,150 0,50" class="box"/>
+      <line x1="0" y1="0" x2="200" y2="200" class="cross"/>
+      <line x1="200" y1="0" x2="0" y2="200" class="cross"/>
+    </g>
+    <!-- Hex 4 (bottom-right, offset down) -->
+    <g transform="translate(760, 160)">
+      <polygon points="100,0 200,50 200,150 100,200 0,150 0,50" class="box"/>
+      <line x1="0" y1="0" x2="200" y2="200" class="cross"/>
+      <line x1="200" y1="0" x2="0" y2="200" class="cross"/>
+    </g>
+    <text x="460" y="365" text-anchor="middle" class="annot">4 hex tiles, 2-on-top + 2-offset-down, alternating</text>
+  </g>
+
+  <!-- ===== FILTER CHIPS ===== -->
+  <g transform="translate(40, 700)">
+    <rect class="box" width="920" height="70"/>
+    <text x="0" y="-6" class="annot">[filter chips / vanilla JS event handler]</text>
+    <rect x="30" y="22" width="50" height="28" rx="14" class="box" fill="#333"/>
+    <rect x="90" y="22" width="80" height="28" rx="14" class="box"/>
+    <rect x="180" y="22" width="60" height="28" rx="14" class="box"/>
+    <rect x="250" y="22" width="70" height="28" rx="14" class="box"/>
+    <rect x="330" y="22" width="80" height="28" rx="14" class="box"/>
+    <text x="430" y="40" class="annot">5 chips: All / AI / Web / Mobile / Robotics</text>
+  </g>
+
+  <!-- ===== PROJECT CARDS GRID (2 cols x 4 rows) ===== -->
+  <text x="40" y="800" class="annot">[project cards / rendered from data/projects.json, 8 cards in 2-col grid]</text>
+
+  <!-- Row 1 -->
+  <g transform="translate(40, 820)">
+    <!-- Card 1 -->
+    <g>
+      <rect class="box" width="445" height="300"/>
+      <!-- thumb -->
+      <rect x="20" y="20" width="405" height="80" class="box"/>
+      <line x1="20" y1="20" x2="425" y2="100" class="cross"/>
+      <line x1="425" y1="20" x2="20" y2="100" class="cross"/>
+      <line x1="20" y1="20" x2="425" y2="20" stroke="#333" stroke-width="4"/>
+      <!-- year -->
+      <line x1="20" y1="125" x2="60" y2="125" class="line-thin"/>
+      <!-- title -->
+      <line x1="20" y1="150" x2="200" y2="150" stroke="#333" stroke-width="6"/>
+      <!-- tagline -->
+      <line x1="20" y1="175" x2="370" y2="175" class="line-thin"/>
+      <line x1="20" y1="190" x2="320" y2="190" class="line-thin"/>
+      <!-- highlights -->
+      <circle cx="24" cy="215" r="2" fill="#666"/>
+      <line x1="32" y1="215" x2="350" y2="215" class="line-thin"/>
+      <circle cx="24" cy="235" r="2" fill="#666"/>
+      <line x1="32" y1="235" x2="310" y2="235" class="line-thin"/>
+      <!-- stack chips -->
+      <rect x="20" y="250" width="50" height="18" rx="3" class="box-light"/>
+      <rect x="78" y="250" width="60" height="18" rx="3" class="box-light"/>
+      <rect x="146" y="250" width="50" height="18" rx="3" class="box-light"/>
+      <rect x="204" y="250" width="60" height="18" rx="3" class="box-light"/>
+      <!-- links -->
+      <line x1="20" y1="285" x2="60" y2="285" class="line"/>
+      <line x1="70" y1="285" x2="140" y2="285" class="line-thin"/>
+    </g>
+
+    <!-- Card 2 -->
+    <g transform="translate(475, 0)">
+      <rect class="box" width="445" height="300"/>
+      <rect x="20" y="20" width="405" height="80" class="box"/>
+      <line x1="20" y1="20" x2="425" y2="100" class="cross"/>
+      <line x1="425" y1="20" x2="20" y2="100" class="cross"/>
+      <line x1="20" y1="20" x2="425" y2="20" stroke="#333" stroke-width="4"/>
+      <line x1="20" y1="125" x2="60" y2="125" class="line-thin"/>
+      <line x1="20" y1="150" x2="220" y2="150" stroke="#333" stroke-width="6"/>
+      <line x1="20" y1="175" x2="370" y2="175" class="line-thin"/>
+      <line x1="20" y1="190" x2="340" y2="190" class="line-thin"/>
+      <circle cx="24" cy="215" r="2" fill="#666"/>
+      <line x1="32" y1="215" x2="350" y2="215" class="line-thin"/>
+      <circle cx="24" cy="235" r="2" fill="#666"/>
+      <line x1="32" y1="235" x2="330" y2="235" class="line-thin"/>
+      <rect x="20" y="250" width="50" height="18" rx="3" class="box-light"/>
+      <rect x="78" y="250" width="60" height="18" rx="3" class="box-light"/>
+      <rect x="146" y="250" width="50" height="18" rx="3" class="box-light"/>
+      <line x1="20" y1="285" x2="60" y2="285" class="line"/>
+      <line x1="70" y1="285" x2="140" y2="285" class="line-thin"/>
+    </g>
+  </g>
+
+  <!-- Row 2 -->
+  <g transform="translate(40, 1140)">
+    <g>
+      <rect class="box" width="445" height="300"/>
+      <rect x="20" y="20" width="405" height="80" class="box"/>
+      <line x1="20" y1="20" x2="425" y2="100" class="cross"/>
+      <line x1="425" y1="20" x2="20" y2="100" class="cross"/>
+      <line x1="20" y1="20" x2="425" y2="20" stroke="#333" stroke-width="4"/>
+      <line x1="20" y1="125" x2="60" y2="125" class="line-thin"/>
+      <line x1="20" y1="150" x2="240" y2="150" stroke="#333" stroke-width="6"/>
+      <line x1="20" y1="175" x2="370" y2="175" class="line-thin"/>
+      <circle cx="24" cy="210" r="2" fill="#666"/>
+      <line x1="32" y1="210" x2="320" y2="210" class="line-thin"/>
+      <circle cx="24" cy="230" r="2" fill="#666"/>
+      <line x1="32" y1="230" x2="290" y2="230" class="line-thin"/>
+      <rect x="20" y="250" width="60" height="18" rx="3" class="box-light"/>
+      <rect x="88" y="250" width="80" height="18" rx="3" class="box-light"/>
+      <rect x="176" y="250" width="50" height="18" rx="3" class="box-light"/>
+      <line x1="20" y1="285" x2="60" y2="285" class="line"/>
+    </g>
+    <g transform="translate(475, 0)">
+      <rect class="box" width="445" height="300"/>
+      <rect x="20" y="20" width="405" height="80" class="box"/>
+      <line x1="20" y1="20" x2="425" y2="100" class="cross"/>
+      <line x1="425" y1="20" x2="20" y2="100" class="cross"/>
+      <line x1="20" y1="20" x2="425" y2="20" stroke="#333" stroke-width="4"/>
+      <line x1="20" y1="125" x2="60" y2="125" class="line-thin"/>
+      <line x1="20" y1="150" x2="220" y2="150" stroke="#333" stroke-width="6"/>
+      <line x1="20" y1="175" x2="370" y2="175" class="line-thin"/>
+      <circle cx="24" cy="210" r="2" fill="#666"/>
+      <line x1="32" y1="210" x2="340" y2="210" class="line-thin"/>
+      <circle cx="24" cy="230" r="2" fill="#666"/>
+      <line x1="32" y1="230" x2="310" y2="230" class="line-thin"/>
+      <rect x="20" y="250" width="50" height="18" rx="3" class="box-light"/>
+      <rect x="78" y="250" width="40" height="18" rx="3" class="box-light"/>
+      <rect x="126" y="250" width="70" height="18" rx="3" class="box-light"/>
+      <line x1="20" y1="285" x2="60" y2="285" class="line"/>
+    </g>
+  </g>
+
+  <!-- Row 3 -->
+  <g transform="translate(40, 1460)">
+    <g>
+      <rect class="box" width="445" height="300"/>
+      <rect x="20" y="20" width="405" height="80" class="box"/>
+      <line x1="20" y1="20" x2="425" y2="100" class="cross"/>
+      <line x1="425" y1="20" x2="20" y2="100" class="cross"/>
+      <line x1="20" y1="20" x2="425" y2="20" stroke="#333" stroke-width="4"/>
+      <line x1="20" y1="125" x2="60" y2="125" class="line-thin"/>
+      <line x1="20" y1="150" x2="220" y2="150" stroke="#333" stroke-width="6"/>
+      <line x1="20" y1="175" x2="370" y2="175" class="line-thin"/>
+      <circle cx="24" cy="210" r="2" fill="#666"/>
+      <line x1="32" y1="210" x2="350" y2="210" class="line-thin"/>
+      <circle cx="24" cy="230" r="2" fill="#666"/>
+      <line x1="32" y1="230" x2="320" y2="230" class="line-thin"/>
+      <rect x="20" y="250" width="80" height="18" rx="3" class="box-light"/>
+      <rect x="108" y="250" width="90" height="18" rx="3" class="box-light"/>
+      <line x1="20" y1="285" x2="60" y2="285" class="line"/>
+    </g>
+    <g transform="translate(475, 0)">
+      <rect class="box" width="445" height="300"/>
+      <rect x="20" y="20" width="405" height="80" class="box"/>
+      <line x1="20" y1="20" x2="425" y2="100" class="cross"/>
+      <line x1="425" y1="20" x2="20" y2="100" class="cross"/>
+      <line x1="20" y1="20" x2="425" y2="20" stroke="#333" stroke-width="4"/>
+      <line x1="20" y1="125" x2="60" y2="125" class="line-thin"/>
+      <line x1="20" y1="150" x2="220" y2="150" stroke="#333" stroke-width="6"/>
+      <line x1="20" y1="175" x2="370" y2="175" class="line-thin"/>
+      <circle cx="24" cy="210" r="2" fill="#666"/>
+      <line x1="32" y1="210" x2="330" y2="210" class="line-thin"/>
+      <circle cx="24" cy="230" r="2" fill="#666"/>
+      <line x1="32" y1="230" x2="290" y2="230" class="line-thin"/>
+      <rect x="20" y="250" width="50" height="18" rx="3" class="box-light"/>
+      <rect x="78" y="250" width="70" height="18" rx="3" class="box-light"/>
+      <rect x="156" y="250" width="60" height="18" rx="3" class="box-light"/>
+      <line x1="20" y1="285" x2="60" y2="285" class="line"/>
+    </g>
+  </g>
+
+  <!-- Row 4 -->
+  <g transform="translate(40, 1780)">
+    <g>
+      <rect class="box" width="445" height="300"/>
+      <rect x="20" y="20" width="405" height="80" class="box"/>
+      <line x1="20" y1="20" x2="425" y2="100" class="cross"/>
+      <line x1="425" y1="20" x2="20" y2="100" class="cross"/>
+      <line x1="20" y1="20" x2="425" y2="20" stroke="#333" stroke-width="4"/>
+      <line x1="20" y1="125" x2="60" y2="125" class="line-thin"/>
+      <line x1="20" y1="150" x2="200" y2="150" stroke="#333" stroke-width="6"/>
+      <line x1="20" y1="175" x2="370" y2="175" class="line-thin"/>
+      <circle cx="24" cy="210" r="2" fill="#666"/>
+      <line x1="32" y1="210" x2="290" y2="210" class="line-thin"/>
+      <circle cx="24" cy="230" r="2" fill="#666"/>
+      <line x1="32" y1="230" x2="320" y2="230" class="line-thin"/>
+      <rect x="20" y="250" width="40" height="18" rx="3" class="box-light"/>
+      <rect x="68" y="250" width="60" height="18" rx="3" class="box-light"/>
+      <rect x="136" y="250" width="80" height="18" rx="3" class="box-light"/>
+      <line x1="20" y1="285" x2="60" y2="285" class="line"/>
+    </g>
+    <g transform="translate(475, 0)">
+      <rect class="box" width="445" height="300"/>
+      <rect x="20" y="20" width="405" height="80" class="box"/>
+      <line x1="20" y1="20" x2="425" y2="100" class="cross"/>
+      <line x1="425" y1="20" x2="20" y2="100" class="cross"/>
+      <line x1="20" y1="20" x2="425" y2="20" stroke="#333" stroke-width="4"/>
+      <line x1="20" y1="125" x2="60" y2="125" class="line-thin"/>
+      <line x1="20" y1="150" x2="240" y2="150" stroke="#333" stroke-width="6"/>
+      <line x1="20" y1="175" x2="370" y2="175" class="line-thin"/>
+      <circle cx="24" cy="210" r="2" fill="#666"/>
+      <line x1="32" y1="210" x2="310" y2="210" class="line-thin"/>
+      <circle cx="24" cy="230" r="2" fill="#666"/>
+      <line x1="32" y1="230" x2="280" y2="230" class="line-thin"/>
+      <rect x="20" y="250" width="50" height="18" rx="3" class="box-light"/>
+      <rect x="78" y="250" width="50" height="18" rx="3" class="box-light"/>
+      <rect x="136" y="250" width="50" height="18" rx="3" class="box-light"/>
+      <rect x="194" y="250" width="60" height="18" rx="3" class="box-light"/>
+      <line x1="20" y1="285" x2="60" y2="285" class="line"/>
+    </g>
+  </g>
+
+  <!-- ===== FOOTER ===== -->
+  <g transform="translate(40, 2120)">
+    <rect class="box" width="920" height="50"/>
+    <text x="0" y="-6" class="annot">[footer / same on every page]</text>
+    <line x1="30" y1="20" x2="240" y2="20" class="line-thin"/>
+    <line x1="30" y1="35" x2="300" y2="35" class="line-thin"/>
+    <line x1="650" y1="20" x2="800" y2="20" class="line-thin"/>
+    <line x1="650" y1="35" x2="900" y2="35" class="line-thin"/>
+  </g>
+
+  <!-- ===== Legend ===== -->
+  <g transform="translate(40, 2210)" font-size="9">
+    <rect width="14" height="10" class="box"/>
+    <text x="22" y="9" class="tiny">solid border = container</text>
+    <line x1="170" y1="5" x2="200" y2="5" stroke="#333" stroke-width="6"/>
+    <text x="210" y="9" class="tiny">heavy bar = heading</text>
+    <line x1="350" y1="5" x2="380" y2="5" class="line-thin"/>
+    <text x="390" y="9" class="tiny">thin line = body text</text>
+    <line x1="530" y1="0" x2="544" y2="10" class="cross"/>
+    <line x1="544" y1="0" x2="530" y2="10" class="cross"/>
+    <text x="554" y="9" class="tiny">crossed box = image placeholder</text>
+  </g>
+</svg>

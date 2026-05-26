@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 2240" font-family="Courier New, monospace">
+  <defs>
+    <style>
+      .bg { fill: #ffffff; }
+      .box { fill: none; stroke: #333; stroke-width: 1.5; }
+      .box-hidden { fill: none; stroke: #999; stroke-width: 1.5; stroke-dasharray: 6 4; }
+      .line { stroke: #999; stroke-width: 2; }
+      .line-thin { stroke: #bbb; stroke-width: 1.5; }
+      .cross { stroke: #999; stroke-width: 1; }
+      .text { fill: #333; font-size: 11px; }
+      .label { fill: #666; font-size: 10px; }
+      .tiny { fill: #999; font-size: 9px; }
+      .annot { fill: #888; font-size: 9px; font-style: italic; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1000" height="2240"/>
+
+  <!-- Title -->
+  <text x="40" y="28" class="text" font-size="13" font-weight="700">WIREFRAME / index.html / HOME PAGE</text>
+  <line x1="40" y1="38" x2="960" y2="38" class="line-thin"/>
+
+  <!-- ===== NAVBAR ===== -->
+  <g transform="translate(40, 60)">
+    <rect class="box" width="920" height="50"/>
+    <!-- avatar circle -->
+    <circle cx="28" cy="25" r="14" class="box"/>
+    <line x1="20" y1="17" x2="36" y2="33" class="cross"/>
+    <line x1="36" y1="17" x2="20" y2="33" class="cross"/>
+    <!-- name placeholder line -->
+    <line x1="55" y1="25" x2="180" y2="25" class="line"/>
+    <!-- nav link placeholders -->
+    <line x1="640" y1="25" x2="690" y2="25" class="line"/>
+    <line x1="710" y1="25" x2="780" y2="25" class="line"/>
+    <line x1="800" y1="25" x2="850" y2="25" class="line"/>
+    <line x1="870" y1="25" x2="900" y2="25" class="line"/>
+    <text x="0" y="-6" class="annot">[navigation, sticky]</text>
+  </g>
+
+  <!-- ===== HERO ===== -->
+  <g transform="translate(40, 130)">
+    <rect class="box" width="920" height="500"/>
+    <text x="0" y="-6" class="annot">[hero section]</text>
+
+    <!-- Left column (text area) -->
+    <!-- Pill -->
+    <rect x="30" y="40" width="240" height="26" rx="13" class="box"/>
+    <line x1="48" y1="53" x2="252" y2="53" class="line-thin"/>
+    <text x="280" y="58" class="annot">availability pill</text>
+
+    <!-- Big heading (3 text bars) -->
+    <line x1="30" y1="110" x2="380" y2="110" stroke="#333" stroke-width="10"/>
+    <line x1="30" y1="140" x2="540" y2="140" stroke="#333" stroke-width="10"/>
+    <text x="560" y="135" class="annot">name / H1</text>
+
+    <line x1="30" y1="180" x2="220" y2="180" class="line"/>
+    <text x="240" y="184" class="annot">role label</text>
+
+    <line x1="30" y1="215" x2="500" y2="215" class="line-thin"/>
+    <text x="520" y="219" class="annot">tagline</text>
+
+    <!-- focus chips -->
+    <rect x="30" y="240" width="80" height="22" rx="11" class="box"/>
+    <rect x="120" y="240" width="80" height="22" rx="11" class="box"/>
+    <rect x="210" y="240" width="80" height="22" rx="11" class="box"/>
+    <text x="310" y="256" class="annot">focus chips</text>
+
+    <!-- CTA buttons -->
+    <rect x="30" y="290" width="130" height="38" class="box" fill="#333"/>
+    <rect x="170" y="290" width="90" height="38" class="box"/>
+    <rect x="270" y="290" width="90" height="38" class="box"/>
+    <text x="380" y="313" class="annot">primary + 2 outline buttons</text>
+
+    <!-- Stats divider + 3 stats -->
+    <line x1="30" y1="365" x2="600" y2="365" class="line-thin"/>
+    <line x1="30" y1="395" x2="100" y2="395" stroke="#333" stroke-width="8"/>
+    <line x1="30" y1="415" x2="120" y2="415" class="line-thin"/>
+    <line x1="220" y1="395" x2="290" y2="395" stroke="#333" stroke-width="8"/>
+    <line x1="220" y1="415" x2="300" y2="415" class="line-thin"/>
+    <line x1="410" y1="395" x2="540" y2="395" stroke="#333" stroke-width="8"/>
+    <line x1="410" y1="415" x2="490" y2="415" class="line-thin"/>
+    <text x="30" y="450" class="annot">3 stat cells (number / label)</text>
+
+    <!-- Right column (circular photo placeholder) -->
+    <circle cx="780" cy="230" r="120" class="box"/>
+    <line x1="700" y1="150" x2="860" y2="310" class="cross"/>
+    <line x1="860" y1="150" x2="700" y2="310" class="cross"/>
+    <text x="780" y="370" text-anchor="middle" class="annot">profile photo</text>
+  </g>
+
+  <!-- ===== KONAMI-REVEALED PANEL (hidden by default) ===== -->
+  <g transform="translate(40, 660)">
+    <rect class="box-hidden" width="920" height="140"/>
+    <text x="0" y="-6" class="annot">[hidden until Konami code is entered]</text>
+    <line x1="30" y1="30" x2="200" y2="30" class="line"/>
+    <line x1="30" y1="55" x2="400" y2="55" class="line-thin"/>
+    <rect x="30" y="75" width="200" height="45" class="box"/>
+    <rect x="240" y="75" width="200" height="45" class="box"/>
+    <rect x="450" y="75" width="200" height="45" class="box"/>
+    <rect x="660" y="75" width="200" height="45" class="box"/>
+    <text x="30" y="135" class="annot">4 stat tiles (rendered from data/profile.json)</text>
+  </g>
+
+  <!-- ===== ABOUT ===== -->
+  <g transform="translate(40, 830)">
+    <rect class="box" width="920" height="280"/>
+    <text x="0" y="-6" class="annot">[about]</text>
+    <line x1="30" y1="35" x2="120" y2="35" class="line"/>
+    <text x="135" y="39" class="tiny">// section eyebrow</text>
+    <line x1="30" y1="70" x2="380" y2="70" stroke="#333" stroke-width="8"/>
+    <text x="395" y="74" class="annot">H2 heading</text>
+
+    <!-- 2 columns, 4 rows of bullets -->
+    <g transform="translate(30, 110)">
+      <circle cx="6" cy="14" r="4" fill="#333"/>
+      <line x1="20" y1="14" x2="330" y2="14" class="line-thin"/>
+      <circle cx="450" cy="14" r="4" fill="#333"/>
+      <line x1="464" y1="14" x2="780" y2="14" class="line-thin"/>
+
+      <circle cx="6" cy="50" r="4" fill="#333"/>
+      <line x1="20" y1="50" x2="360" y2="50" class="line-thin"/>
+      <circle cx="450" cy="50" r="4" fill="#333"/>
+      <line x1="464" y1="50" x2="750" y2="50" class="line-thin"/>
+
+      <circle cx="6" cy="86" r="4" fill="#333"/>
+      <line x1="20" y1="86" x2="290" y2="86" class="line-thin"/>
+      <circle cx="450" cy="86" r="4" fill="#333"/>
+      <line x1="464" y1="86" x2="720" y2="86" class="line-thin"/>
+
+      <circle cx="6" cy="122" r="4" fill="#333"/>
+      <line x1="20" y1="122" x2="340" y2="122" class="line-thin"/>
+      <circle cx="450" cy="122" r="4" fill="#333"/>
+      <line x1="464" y1="122" x2="780" y2="122" class="line-thin"/>
+    </g>
+    <text x="30" y="265" class="annot">2-column bullet grid (8 facts)</text>
+  </g>
+
+  <!-- ===== CURRENTLY ===== -->
+  <g transform="translate(40, 1140)">
+    <rect class="box" width="920" height="260"/>
+    <text x="0" y="-6" class="annot">[currently / "right now"]</text>
+    <line x1="30" y1="35" x2="130" y2="35" class="line"/>
+    <line x1="30" y1="70" x2="280" y2="70" stroke="#333" stroke-width="8"/>
+
+    <!-- 2x2 grid -->
+    <rect x="30" y="110" width="420" height="55" class="box"/>
+    <line x1="50" y1="130" x2="120" y2="130" class="line"/>
+    <line x1="50" y1="150" x2="250" y2="150" class="line-thin"/>
+
+    <rect x="470" y="110" width="420" height="55" class="box"/>
+    <line x1="490" y1="130" x2="560" y2="130" class="line"/>
+    <line x1="490" y1="150" x2="690" y2="150" class="line-thin"/>
+
+    <rect x="30" y="180" width="420" height="55" class="box"/>
+    <line x1="50" y1="200" x2="100" y2="200" class="line"/>
+    <line x1="50" y1="220" x2="300" y2="220" class="line-thin"/>
+
+    <rect x="470" y="180" width="420" height="55" class="box"/>
+    <line x1="490" y1="200" x2="580" y2="200" class="line"/>
+    <line x1="490" y1="220" x2="700" y2="220" class="line-thin"/>
+
+    <text x="30" y="252" class="annot">2x2 grid: each card = label + value</text>
+  </g>
+
+  <!-- ===== STACK ===== -->
+  <g transform="translate(40, 1430)">
+    <rect class="box" width="920" height="300"/>
+    <text x="0" y="-6" class="annot">[stack / skills chip cloud]</text>
+    <line x1="30" y1="35" x2="100" y2="35" class="line"/>
+    <line x1="30" y1="70" x2="320" y2="70" stroke="#333" stroke-width="8"/>
+
+    <!-- 5 rows: icon + chips -->
+    <g transform="translate(30, 105)">
+      <!-- Row 1 -->
+      <rect width="32" height="24" class="box"/>
+      <rect x="48" width="60" height="24" rx="3" class="box"/>
+      <rect x="116" width="80" height="24" rx="3" class="box"/>
+      <rect x="204" width="60" height="24" rx="3" class="box"/>
+      <rect x="272" width="60" height="24" rx="3" class="box"/>
+      <rect x="340" width="80" height="24" rx="3" class="box"/>
+      <line x1="0" y1="40" x2="860" y2="40" stroke="#ccc" stroke-width="1" stroke-dasharray="3 3"/>
+      <!-- Row 2 -->
+      <rect y="50" width="32" height="24" class="box"/>
+      <rect x="48" y="50" width="60" height="24" rx="3" class="box"/>
+      <rect x="116" y="50" width="50" height="24" rx="3" class="box"/>
+      <rect x="174" y="50" width="100" height="24" rx="3" class="box"/>
+      <line x1="0" y1="90" x2="860" y2="90" stroke="#ccc" stroke-width="1" stroke-dasharray="3 3"/>
+      <!-- Row 3 -->
+      <rect y="100" width="32" height="24" class="box"/>
+      <rect x="48" y="100" width="70" height="24" rx="3" class="box"/>
+      <rect x="126" y="100" width="90" height="24" rx="3" class="box"/>
+      <rect x="224" y="100" width="50" height="24" rx="3" class="box"/>
+      <rect x="282" y="100" width="70" height="24" rx="3" class="box"/>
+      <rect x="360" y="100" width="60" height="24" rx="3" class="box"/>
+      <line x1="0" y1="140" x2="860" y2="140" stroke="#ccc" stroke-width="1" stroke-dasharray="3 3"/>
+      <!-- Row 4 -->
+      <rect y="150" width="32" height="24" class="box"/>
+      <rect x="48" y="150" width="50" height="24" rx="3" class="box"/>
+      <rect x="106" y="150" width="60" height="24" rx="3" class="box"/>
+      <rect x="174" y="150" width="70" height="24" rx="3" class="box"/>
+      <rect x="252" y="150" width="110" height="24" rx="3" class="box"/>
+      <line x1="0" y1="190" x2="860" y2="190" stroke="#ccc" stroke-width="1" stroke-dasharray="3 3"/>
+      <!-- Row 5 -->
+      <rect y="200" width="32" height="24" class="box"/>
+      <rect x="48" y="200" width="90" height="24" rx="3" class="box"/>
+      <rect x="146" y="200" width="80" height="24" rx="3" class="box"/>
+      <rect x="234" y="200" width="90" height="24" rx="3" class="box"/>
+      <rect x="332" y="200" width="80" height="24" rx="3" class="box"/>
+    </g>
+    <text x="30" y="280" class="annot">5 stack rows: category icon + tag chips, dashed separators</text>
+  </g>
+
+  <!-- ===== OFF THE CLOCK ===== -->
+  <g transform="translate(40, 1760)">
+    <rect class="box" width="920" height="370"/>
+    <text x="0" y="-6" class="annot">[off the clock / photo grid]</text>
+    <line x1="30" y1="35" x2="170" y2="35" class="line"/>
+    <line x1="30" y1="70" x2="280" y2="70" stroke="#333" stroke-width="8"/>
+
+    <!-- Masonry: 1 tall, 1 wide, 5 standard -->
+    <!-- Tall (col 1) -->
+    <g transform="translate(30, 100)">
+      <rect width="200" height="245" class="box"/>
+      <line x1="0" y1="0" x2="200" y2="245" class="cross"/>
+      <line x1="200" y1="0" x2="0" y2="245" class="cross"/>
+      <text x="100" y="270" text-anchor="middle" class="tiny">img placeholder (tall)</text>
+    </g>
+    <!-- Wide (top spans cols 2-3) -->
+    <g transform="translate(245, 100)">
+      <rect width="415" height="115" class="box"/>
+      <line x1="0" y1="0" x2="415" y2="115" class="cross"/>
+      <line x1="415" y1="0" x2="0" y2="115" class="cross"/>
+    </g>
+    <!-- Standard col 4 row 1 -->
+    <g transform="translate(675, 100)">
+      <rect width="200" height="115" class="box"/>
+      <line x1="0" y1="0" x2="200" y2="115" class="cross"/>
+      <line x1="200" y1="0" x2="0" y2="115" class="cross"/>
+    </g>
+    <!-- Standard col 2 row 2 -->
+    <g transform="translate(245, 230)">
+      <rect width="200" height="115" class="box"/>
+      <line x1="0" y1="0" x2="200" y2="115" class="cross"/>
+      <line x1="200" y1="0" x2="0" y2="115" class="cross"/>
+    </g>
+    <!-- Standard col 3 row 2 -->
+    <g transform="translate(460, 230)">
+      <rect width="200" height="115" class="box"/>
+      <line x1="0" y1="0" x2="200" y2="115" class="cross"/>
+      <line x1="200" y1="0" x2="0" y2="115" class="cross"/>
+    </g>
+    <!-- Standard col 4 row 2a -->
+    <g transform="translate(675, 230)">
+      <rect width="200" height="55" class="box"/>
+      <line x1="0" y1="0" x2="200" y2="55" class="cross"/>
+      <line x1="200" y1="0" x2="0" y2="55" class="cross"/>
+    </g>
+    <!-- Standard col 4 row 2b -->
+    <g transform="translate(675, 295)">
+      <rect width="200" height="50" class="box"/>
+      <line x1="0" y1="0" x2="200" y2="50" class="cross"/>
+      <line x1="200" y1="0" x2="0" y2="50" class="cross"/>
+    </g>
+  </g>
+
+  <!-- ===== CONTACT ===== -->
+  <g transform="translate(40, 2160)">
+    <rect class="box" width="920" height="60"/>
+    <text x="0" y="-6" class="annot">[contact]</text>
+    <line x1="30" y1="25" x2="120" y2="25" class="line-thin"/>
+    <line x1="30" y1="45" x2="500" y2="45" class="line-thin"/>
+    <rect x="540" y="14" width="80" height="32" class="box" fill="#333"/>
+    <rect x="630" y="14" width="80" height="32" class="box"/>
+    <rect x="720" y="14" width="80" height="32" class="box"/>
+  </g>
+
+  <!-- ===== Legend ===== -->
+  <g transform="translate(40, 2220)" font-size="9">
+    <rect width="14" height="10" class="box"/>
+    <text x="22" y="9" class="tiny">solid border = visible</text>
+    <rect x="160" width="14" height="10" class="box-hidden"/>
+    <text x="182" y="9" class="tiny">dashed = hidden / conditional</text>
+    <line x1="370" y1="5" x2="384" y2="5" class="cross"/>
+    <line x1="370" y1="0" x2="384" y2="10" class="cross"/>
+    <line x1="384" y1="0" x2="370" y2="10" class="cross"/>
+    <text x="395" y="9" class="tiny">crossed box = image placeholder</text>
+    <line x1="600" y1="5" x2="640" y2="5" stroke="#333" stroke-width="8"/>
+    <text x="650" y="9" class="tiny">heavy bar = heading text</text>
+    <line x1="800" y1="5" x2="840" y2="5" class="line-thin"/>
+    <text x="850" y="9" class="tiny">thin line = body text</text>
+  </g>
+</svg>

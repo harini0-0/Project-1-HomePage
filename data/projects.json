@@ -1,0 +1,181 @@
+{
+  "projects": [
+    {
+      "id": "sheild",
+      "title": "SHEild",
+      "tagline": "Deepfake detection built for non-technical users.",
+      "year": "2026",
+      "categories": ["ai-ml"],
+      "stack": ["PyTorch", "OpenCV", "WebRTC", "FastAPI", "Docker", "AWS"],
+      "highlights": [
+        "Best Technical Innovation, SheHack 2026",
+        "Real-time video frame inference pipeline",
+        "Web + CLI interfaces"
+      ],
+      "links": {
+        "github": "https://github.com/harini0-0",
+        "demo": null
+      },
+      "thumbnail": {
+        "gradient": "linear-gradient(135deg, #ff5252 0%, #ff6b9d 100%)",
+        "label": "SH"
+      },
+      "coverImage": "images/projects/sheild.png",
+      "categoryLabel": "AI / ML",
+      "featured": true
+    },
+    {
+      "id": "priceless",
+      "title": "Priceless",
+      "tagline": "Puts a dollar figure on the data every website extracts from you.",
+      "year": "2026",
+      "categories": ["ai-ml", "web"],
+      "stack": ["Chrome MV3", "React", "PyTorch", "ONNX Runtime Web", "WebAssembly", "Claude API"],
+      "highlights": [
+        "SharkHack 2026, Off-Grid Track",
+        "Two PyTorch models running client-side via WASM",
+        "1.27M URL training set"
+      ],
+      "links": {
+        "github": "https://github.com/harini0-0",
+        "demo": null
+      },
+      "thumbnail": {
+        "gradient": "linear-gradient(135deg, #ffc93c 0%, #4ecdc4 100%)",
+        "label": "PL"
+      },
+      "coverImage": "images/projects/priceless.png",
+      "categoryLabel": "Chrome ext / AI",
+      "featured": true
+    },
+    {
+      "id": "rag-portfolio",
+      "title": "RAG-Powered AI Portfolio",
+      "tagline": "Conversational agent trained on my own writing.",
+      "year": "2026",
+      "categories": ["ai-ml"],
+      "stack": ["LangGraph", "Vector Embeddings", "LLMs", "Python", "TypeScript"],
+      "highlights": [
+        "Custom state machines: retrieval, ranking, response",
+        "Built for conversation, not search"
+      ],
+      "links": {
+        "github": "https://github.com/harini0-0",
+        "demo": null
+      },
+      "thumbnail": {
+        "gradient": "linear-gradient(135deg, #ff6b9d 0%, #4ecdc4 100%)",
+        "label": "RA"
+      },
+      "coverImage": "images/projects/rag-portfolio.png",
+      "categoryLabel": "RAG / LangGraph",
+      "featured": true
+    },
+    {
+      "id": "flutter-apps",
+      "title": "Flutter Mobile Apps",
+      "tagline": "Money manager + neumorphic music player. Full UI/UX in Flutter.",
+      "year": "2024",
+      "categories": ["mobile"],
+      "stack": ["Flutter", "Dart", "Provider", "Flutter Hive", "Neumorphic Design"],
+      "highlights": [
+        "Transactions, categories, monthly dashboards",
+        "Local-first storage with Flutter Hive"
+      ],
+      "links": {
+        "github": "https://github.com/harini0-0",
+        "demo": null
+      },
+      "thumbnail": {
+        "gradient": "linear-gradient(135deg, #4ecdc4 0%, #ffc93c 100%)",
+        "label": "FL"
+      },
+      "coverImage": "images/projects/flutter-apps.png",
+      "categoryLabel": "Flutter / Mobile",
+      "featured": true
+    },
+    {
+      "id": "codon-prodgard",
+      "title": "Codon: Prodgard",
+      "tagline": "VS Code extension that turns code into plain-language reports. One command, no meetings.",
+      "year": "2025",
+      "categories": ["ai-ml", "web"],
+      "stack": ["LangGraph", "GitHub Copilot API", "VS Code Extension API", "TypeScript", "Python"],
+      "highlights": [
+        "Shipped internally at Wells Fargo",
+        "Ended a recurring class of business handoff meetings"
+      ],
+      "links": {
+        "github": "https://github.com/harini0-0",
+        "demo": null
+      },
+      "thumbnail": {
+        "gradient": "linear-gradient(135deg, #ff6b9d 0%, #ffa552 100%)",
+        "label": "CP"
+      },
+      "coverImage": "images/projects/codon-prodgard.png",
+      "categoryLabel": "AI / DevTool",
+      "featured": false
+    },
+    {
+      "id": "release-version-tool",
+      "title": "Release Version Tool",
+      "tagline": "Cut a 90-minute pre-release ritual to under 5.",
+      "year": "2024",
+      "categories": ["web"],
+      "stack": ["React", "Spring Boot", "Java 17", "Jenkins", "Harness", "Jira"],
+      "highlights": ["Aggregates state across 5 REST APIs", "JUnit + Karate test coverage"],
+      "links": {
+        "github": "https://github.com/harini0-0",
+        "demo": null
+      },
+      "thumbnail": {
+        "gradient": "linear-gradient(135deg, #ffa552 0%, #ffc93c 100%)",
+        "label": "RV"
+      },
+      "coverImage": "images/projects/release-version-tool.png",
+      "categoryLabel": "Full-stack",
+      "featured": false
+    },
+    {
+      "id": "hexapedal-bot",
+      "title": "Hexapedal Bot",
+      "tagline": "Six-legged robot. Locomotion and stability on rugged terrain.",
+      "year": "2023",
+      "categories": ["robotics"],
+      "stack": ["ROS", "Python", "Motion Control"],
+      "highlights": ["Stable orientation across surfaces", "Swarm-behavior research, ongoing"],
+      "links": {
+        "github": "https://github.com/harini0-0",
+        "demo": null
+      },
+      "thumbnail": {
+        "gradient": "linear-gradient(135deg, #4ecdc4 0%, #ff5252 100%)",
+        "label": "HX"
+      },
+      "coverImage": "images/projects/hexapedal-bot.png",
+      "categoryLabel": "Robotics",
+      "featured": false
+    },
+    {
+      "id": "bert-chatbot",
+      "title": "BERT NLP Chatbot",
+      "tagline": "BERT sentiment + classification routing. Cut customer friction 80%.",
+      "year": "2022",
+      "categories": ["ai-ml"],
+      "stack": ["Python", "BERT", "PyTorch", "React", "Firebase"],
+      "highlights": ["Wells Fargo internship", "Dual-model: sentiment + intent routing"],
+      "links": {
+        "github": "https://github.com/harini0-0",
+        "demo": null
+      },
+      "thumbnail": {
+        "gradient": "linear-gradient(135deg, #ffc93c 0%, #ff6b9d 100%)",
+        "label": "BR"
+      },
+      "coverImage": "images/projects/bert-chatbot.png",
+      "categoryLabel": "AI / NLP",
+      "featured": false
+    }
+  ]
+}

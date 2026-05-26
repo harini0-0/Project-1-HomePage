@@ -1,0 +1,40 @@
+{
+  "name": "homepage-harini",
+  "version": "1.0.0",
+  "description": "Personal homepage for Harini Thirunavukkarasan - CS5610 Web Development, Northeastern University. Built with vanilla HTML5, CSS3, ES6 modules, and Bootstrap 5.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "serve": "npx --yes serve@latest -l 8080 .",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write \"**/*.{js,css,html,json,md}\"",
+    "format:check": "prettier --check \"**/*.{js,css,html,json,md}\""
+  },
+  "keywords": [
+    "homepage",
+    "portfolio",
+    "cs5610",
+    "northeastern",
+    "vanilla-js",
+    "bootstrap"
+  ],
+  "author": "Harini Thirunavukkarasan <harinipri2001@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://harini0-0.github.io/homepage-harini/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/harini0-0/homepage-harini.git"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.18.0",
+    "eslint": "^9.18.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "globals": "^15.14.0",
+    "prettier": "^3.4.2"
+  }
+}

@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Vault - Harini Thirunavukkarasan</title>
+
+    <meta
+      name="description"
+      content="Locked-vault page for Harini Thirunavukkarasan. Enter the Konami code to reveal a career timeline."
+    />
+    <meta name="author" content="Harini Thirunavukkarasan" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230d0d1a'/%3E%3Cpath d='M32 8a24 24 0 1 1-20.78 36L32 32V8z' fill='%23ffc93c'/%3E%3Ccircle cx='36' cy='20' r='2.5' fill='%230d0d1a'/%3E%3C/svg%3E"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header>
+      <nav class="navbar navbar-expand-md site-nav sticky-top" aria-label="Primary">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <span class="brand-avatar" aria-hidden="true">
+              <img src="images/profile.jpg" alt="" />
+              HT
+            </span>
+            <span>Harini Thirunavukkarasan</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="ai.html">The Vault</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <!-- VAULT HERO (locked state, visible by default) -->
+      <section class="vault" data-konami-target aria-live="polite">
+        <div class="container">
+          <div class="vault-locked">
+            <p class="section-eyebrow">// secret room</p>
+            <h1 class="vault-title">Press the Konami code</h1>
+            <p class="vault-tagline">
+              Unlock my career path. Six milestones, eleven jobs of code, one robot.
+            </p>
+
+            <ol class="vault-keys" aria-label="Konami code sequence">
+              <li><kbd class="key">&uarr;</kbd></li>
+              <li><kbd class="key">&uarr;</kbd></li>
+              <li><kbd class="key">&darr;</kbd></li>
+              <li><kbd class="key">&darr;</kbd></li>
+              <li><kbd class="key">&larr;</kbd></li>
+              <li><kbd class="key">&rarr;</kbd></li>
+              <li><kbd class="key">&larr;</kbd></li>
+              <li><kbd class="key">&rarr;</kbd></li>
+              <li><kbd class="key">B</kbd></li>
+              <li><kbd class="key">A</kbd></li>
+            </ol>
+
+            <p class="vault-status">
+              <span class="vault-status-dot" aria-hidden="true"></span>
+              awaiting input
+            </p>
+          </div>
+
+          <!-- TIMELINE (revealed only after Konami) -->
+          <div class="vault-unlocked konami-reveal">
+            <p class="section-eyebrow vault-unlocked-eyebrow">// timeline unlocked</p>
+            <h2 class="vault-unlocked-title">Path so far</h2>
+            <ol class="timeline">
+              <li class="timeline-item" data-year="2026">
+                <div class="timeline-year">2026</div>
+                <div class="timeline-content">
+                  <h3 class="timeline-heading">Northeastern + two hackathons</h3>
+                  <p class="timeline-desc">
+                    Started MS CS in Boston. Won Best Technical Innovation at SheHack 2026 with
+                    SHEild. Shipped Priceless at SharkHack. Built a RAG-powered conversational
+                    portfolio.
+                  </p>
+                </div>
+              </li>
+              <li class="timeline-item" data-year="2025">
+                <div class="timeline-year">2025</div>
+                <div class="timeline-content">
+                  <h3 class="timeline-heading">Codon: Prodgard shipped</h3>
+                  <p class="timeline-desc">
+                    AI VS Code extension live at Wells Fargo. One command turned code into
+                    plain-language reports and ended a recurring class of handoff meetings.
+                  </p>
+                </div>
+              </li>
+              <li class="timeline-item" data-year="2024">
+                <div class="timeline-year">2024</div>
+                <div class="timeline-content">
+                  <h3 class="timeline-heading">90 minutes to 5</h3>
+                  <p class="timeline-desc">
+                    Built the Release Version Tool that cut a 90-minute pre-release ritual to under
+                    5. Also shipped two Flutter apps: a money manager and a neumorphic music player.
+                  </p>
+                </div>
+              </li>
+              <li class="timeline-item" data-year="2023">
+                <div class="timeline-year">2023</div>
+                <div class="timeline-content">
+                  <h3 class="timeline-heading">Wells Fargo SWE, full-time</h3>
+                  <p class="timeline-desc">
+                    Graduated B.Tech IT from NIT Karnataka. Joined Wells Fargo as a Senior SWE
+                    working on consumer-lending fintech. Side project: a hexapedal robot for
+                    locomotion research.
+                  </p>
+                </div>
+              </li>
+              <li class="timeline-item" data-year="2022">
+                <div class="timeline-year">2022</div>
+                <div class="timeline-content">
+                  <h3 class="timeline-heading">First production ML + IEEE publication</h3>
+                  <p class="timeline-desc">
+                    Wells Fargo Program Associate intern. Built a two-model BERT chatbot that cut
+                    customer friction 80%. Published in IEEE Xplore: a smart traffic management
+                    system using parallel systems and multithreading.
+                  </p>
+                </div>
+              </li>
+              <li class="timeline-item" data-year="2019">
+                <div class="timeline-year">2019</div>
+                <div class="timeline-content">
+                  <h3 class="timeline-heading">NIT Karnataka, day one</h3>
+                  <p class="timeline-desc">Started B.Tech in Information Technology.</p>
+                </div>
+              </li>
+            </ol>
+            <p class="vault-cta">
+              Want to be the next milestone? <a href="index.html#contact">Get in touch</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- AI DISCLOSURE (small honest section) -->
+      <section class="ai-disclosure-section">
+        <div class="container">
+          <p class="section-eyebrow">// about this page</p>
+          <h2 class="ai-disclosure-title">Where the AI lives</h2>
+          <p class="ai-disclosure-body">
+            The locked vault and timeline above are hand-authored. The short descriptions under each
+            milestone were drafted by <strong>Claude Sonnet 4.6</strong> from my resume and then
+            edited by me. That is the AI footprint on this page. Prompt below for full transparency.
+          </p>
+          <details class="ai-prompt-details">
+            <summary>Show verbatim prompt</summary>
+            <div class="ai-prompt-box" aria-label="Prompt used to generate timeline descriptions">
+              You are Claude Sonnet 4.6. I am Harini Thirunavukkarasan, a Northeastern MS CS
+              student. I am building a career timeline for the third page of my CS5610 portfolio.
+              Given my resume (attached), produce 6 short timeline-entry descriptions, one for each
+              year bucket: 2019, 2022, 2023, 2024, 2025, 2026. Each description is 1 to 3 sentences.
+              Style: honest engineer, specific examples, no buzzword soup, no em-dashes, no hype.
+              Output JSON: an array of objects with `year`, `heading`, `desc`.
+            </div>
+            <p class="ai-prompt-meta">
+              Model: <code>claude-sonnet-4-6</code> · Output then hand-edited for tone and length.
+            </p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container d-flex flex-column flex-md-row justify-content-between gap-3">
+        <div>
+          <div>© 2026 Harini Thirunavukkarasan</div>
+          <div>
+            Built for
+            <a
+              href="https://northeastern.instructure.com/courses/229089"
+              target="_blank"
+              rel="noopener noreferrer"
+              >CS5610 Web Development</a
+            >
+            at Northeastern University.
+          </div>
+        </div>
+        <div class="text-md-end">
+          <a
+            href="https://github.com/harini0-0/homepage-harini"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Source</a
+          >
+          ·
+          <a href="LICENSE">MIT</a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
