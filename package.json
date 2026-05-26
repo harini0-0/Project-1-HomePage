@@ -1,5 +1,5 @@
 {
-  "name": "homepage-harini",
+  "name": "project-1-homepage",
   "version": "1.0.0",
   "description": "Personal homepage for Harini Thirunavukkarasan - CS5610 Web Development, Northeastern University. Built with vanilla HTML5, CSS3, ES6 modules, and Bootstrap 5.",
   "type": "module",
@@ -21,10 +21,10 @@
   ],
   "author": "Harini Thirunavukkarasan <harinipri2001@gmail.com>",
   "license": "MIT",
-  "homepage": "https://harini0-0.github.io/homepage-harini/",
+  "homepage": "https://harini0-0.github.io/Project-1-HomePage/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/harini0-0/homepage-harini.git"
+    "url": "https://github.com/harini0-0/Project-1-HomePage.git"
   },
   "dependencies": {
     "bootstrap": "^5.3.3"
