@@ -208,15 +208,17 @@ Implementation lives in:
 
 ### Open
 
+- [x] Deploy to GitHub Pages and paste the URL in README. Live at https://harini0-0.github.io/Project-1-HomePage/
+- [x] Record and upload the 3-minute demo video. https://youtu.be/etV1DWWPiEs
+- [x] Create and share the 2-minute presentation deck. https://drive.google.com/file/d/1qYVa9uyjLkTrAhYW8N_cbuelmBYCH346/view?usp=share_link
 - [ ] Save profile photo at `images/profile.jpg`.
 - [ ] Save project cover screenshots at `images/projects/{sheild,priceless,rag-portfolio,flutter-apps,codon-prodgard,release-version-tool,hexapedal-bot,bert-chatbot}.png`.
 - [ ] Save seven hobby photos at `images/hobbies/`.
 - [ ] Save a home-page screenshot at `images/screenshot-home.png` and uncomment the line in README.
 - [ ] Update per-project GitHub URLs in `data/projects.json` (currently all point to profile root).
 - [ ] Verify the "Currently" copy on the home page reflects actual current status.
-- [ ] Deploy to GitHub Pages and paste the URL in README.
-- [ ] Record and upload the 3-minute demo video.
 - [ ] Validate the deployed site at https://validator.w3.org and fix any errors.
+- [ ] Submit Canvas Google Form with all three URLs.
 - [ ] Optional: theme toggle in the navbar.
 
 ---

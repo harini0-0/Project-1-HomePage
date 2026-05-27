@@ -8,6 +8,16 @@ Vanilla HTML5, CSS3, ES6 modules. Bootstrap 5 for grid. No framework, no jQuery,
 
 **[harini0-0.github.io/Project-1-HomePage](https://harini0-0.github.io/Project-1-HomePage/)**
 
+## Demo video
+
+[![3-minute walkthrough on YouTube](https://img.youtube.com/vi/etV1DWWPiEs/maxresdefault.jpg)](https://youtu.be/etV1DWWPiEs)
+
+[youtu.be/etV1DWWPiEs](https://youtu.be/etV1DWWPiEs)
+
+## Slides
+
+[2-minute presentation deck (Google Drive)](https://drive.google.com/file/d/1qYVa9uyjLkTrAhYW8N_cbuelmBYCH346/view?usp=share_link)
+
 ## Screenshot
 
 ![Home page screenshot](images/screenshot-home.png)
@@ -34,8 +44,8 @@ Re-enter the sequence to toggle off.
 
 Implementation:
 
-- [js/konami.js](js/konami.js) — rolling keydown buffer + body class toggle, gated on `[data-konami-target]` so the listener only attaches on pages with something to reveal.
-- [ai.html](ai.html) — locked vault markup + timeline markup.
+- [js/konami.js](js/konami.js) - rolling keydown buffer + body class toggle, gated on `[data-konami-target]` so the listener only attaches on pages with something to reveal.
+- [ai.html](ai.html) - locked vault markup + timeline markup.
 - The `.vault`, `.timeline`, and `body.dev-mode` blocks at the bottom of [css/styles.css](css/styles.css).
 
 ## Use of Generative AI
